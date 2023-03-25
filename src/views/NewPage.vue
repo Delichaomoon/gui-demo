@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-4">
       <div class="list-group">
         <router-link to="/newPage/a" class="list-group-item list-group-item-action">A</router-link>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="mb-5 navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,11 @@
     </div>
   </div>
   </nav>
-  <div class="container">
+  <div class="container" style="height:300vh">
     <router-view/>
     {{ name }}
   </div>
+  <router-link to="/newPage/routerNavigation">路由導覽</router-link>
 </template>
 
 <style lang="scss">

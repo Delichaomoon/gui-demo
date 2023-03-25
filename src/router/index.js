@@ -85,7 +85,21 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  linkActiveClass:'active',
+  scrollBehavior(to, from, savedPosition) {
+    console.log(to, from, savedPosition);
+    if (to.fullPath.match('newPage')){
+      return {
+        top: 0
+      }
+    }
+    return{
+    }
+    // `to` 和 `from` 都是路由地址
+    // `savedPosition` 可以为空，如果没有的话。
+  }
+  
 })
 
 export default router
